@@ -1,0 +1,8 @@
+CROSS PRODUCT SIMULATION
+
+Baroclinic simulations:
+wind: -10, -5, 0, 5, 10
+samples per wind: 36
+
+Drifter advection:
+windage samples per sim: 10

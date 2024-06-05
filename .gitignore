@@ -138,3 +138,5 @@ old/
 *.pdf
 *.png
 *.mp4
+*.txt
+*pickles/

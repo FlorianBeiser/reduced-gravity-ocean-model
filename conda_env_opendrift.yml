@@ -1,37 +1,39 @@
-# Assumes that conda, pip and build-essentials are installed
----
-name: gpuocean_opendrift
+# Copied from the opendrift git repo
+name: opendrift
 channels:
-- conda-forge
-- opendrift
-
+  - conda-forge
 dependencies:
-- python=3.7
-- conda-build
-- numpy
-- matplotlib=3.3.3
-- jupyter
-- netcdf4
-- pytest
-- xmlrunner
-- scipy
-- pandas
-- pytables
-- nb_conda_kernels
-- nbdime
-- mpi4py
-- openssl
-- requests
-- pip
-- pyproj
-- pytools
-- cartopy
-- ffmpeg
-- xarray
-- seawater
-- opendrift
-# Activate environment and install the following packages using pip:
-# $ conda activate gpuocean_parcels_opendrift
-#  - pycuda: $ pip3 install --no-deps -U pycuda
-# on Windows: make sure your visual studio c++ compiler is available in PATH
-# PATH should have something like C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\
+  - opendrift
+  - matplotlib>=3.5
+  - numpy>=1.17
+  - scipy>=1.6
+  - ipykernel
+  - netcdf4
+  - ffmpeg
+  - pyproj>=2.3
+  - libgdal>=3.1
+  - gdal>=3.1
+  - xarray
+  - dask
+  - cfgrib
+  - pygrib
+  - xhistogram
+  - requests
+  - pytest
+  - pytest-cov
+  - pytest-benchmark
+  - pytest-mpl
+  - cartopy>=0.20
+  - nc-time-axis
+  - geojson
+  - pynucos>=2.12
+  - isodate
+  - coloredlogs
+  - cmocean
+  - utm
+  - roaring-landmask>=0.7
+  - trajan>=0.1.3
+  - pip
+  - pip:
+    - motuclient
+    - pytest-sphinx
